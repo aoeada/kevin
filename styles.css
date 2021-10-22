@@ -22,31 +22,25 @@ body {
 }
 
 #panel2 {
-  font-size: 24px;
-  padding: 10px;
-  text-align: center;
-  background-color: #9DE0AD;
-  color: #377A47;
-  border: solid 1px #6AAD7A;
-  margin: auto;
-}
-
-#panel2 {
-  display: none;
+    display: none;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    background-color: #9DE0AD;
+    color: #377A47;
+    border: solid 1px #6AAD7A;
+    margin: auto;
 }
 
 #panel3 {
-  font-size: 24px;
-  padding: 10px;
-  text-align: center;
-  background-color: #9DE0AD;
-  color: #377A47;
-  border: solid 1px #6AAD7A;
-  margin: auto;
-}
-
-#panel3 {
-  display: none;
+    display: none;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    background-color: #9DE0AD;
+    color: #377A47;
+    border: solid 1px #6AAD7A;
+    margin: auto;
 }
 
  .flex-item h1 {
