@@ -13,7 +13,7 @@ body {
   text-align: center;
   background-color: #9DE0AD;
   color: #377A47;
-  border: solid 1px #6AAD7A;
+  border-bottom: solid 4px #6AAD7A;
   margin: auto;
 }
 
@@ -28,7 +28,7 @@ body {
     text-align: center;
     background-color: #9DE0AD;
     color: #377A47;
-    border: solid 1px #6AAD7A;
+  border-bottom: solid 4px #6AAD7A;
     margin: auto;
 }
 
@@ -39,44 +39,60 @@ body {
     text-align: center;
     background-color: #9DE0AD;
     color: #377A47;
-    border: solid 1px #6AAD7A;
+  border-bottom: solid 4px #6AAD7A;
     margin: auto;
 }
 
- .flex-item h1 {
-  display: flex;
-  flex-flow: flex-direction flex-wrap;
-  color: #377A47;
-  text-align: center;
-  border-style: solid;
-  background-color: #9DE0AD;
-  border-bottom: 6px solid #6AAD7A;
-  border-top: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  padding: 10px;
-  margin: 0px;
+.flex-item h1 {
+    display: flex;
+    justify-content: center;
+ color: #377A47;
+ text-align: center;
+ border-style: solid;
+ background-color: #9DE0AD;
+ border-bottom: 6px solid #6AAD7A;
+ border-top: 0px;
+ border-left: 0px;
+ border-right: 0px;
+ padding: 10px;
+ margin: 0;
+}
+
+.flex-item h2 {
+    display: flex;
+    justify-content: center;
+ color: #377A47;
+ text-align: center;
+ border-style: solid;
+ background-color: #9DE0AD;
+ border-bottom: 6px solid #6AAD7A;
+ border-top: 0px;
+ border-left: 0px;
+ border-right: 0px;
+ padding: 10px;
+ margin: 0;
 }
 
 .flex-parent {
-
-/*   display: flex; */
 }
 
 .flex-item {
-  margin: 0 auto;
-  width: 50%;
-  padding: .5em;
-  font-size: 24px;
-  color: #082D34;
-  font-weight: bold;
-  background: #45ADA8;
-  margin: 0;
-  border-left: 5px solid #127A75;
+    width: 50%;
+    padding: .5em;
+    font-size: 24px;
+    color: #082D34;
+    font-weight: bold;
+    background: #45ADA8;
+    margin: 0;
+    border-left: 5px solid #127A75;
+    align-items: center;
+    justify-content: center;
 }
 
   .flex-item input {
-    width: 10%;
+      display: flex;
+      justify-content: center;
+    width: 90%;
     padding: .5em;
     margin-top: 5px;
     font-size: 25px;
