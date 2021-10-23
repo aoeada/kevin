@@ -2,58 +2,67 @@ function myFunction() {
     var x = document.getElementById("point").value;
     var y = 0;
     const array = [
-      '0','0+',
-      '1-','1','1+',
-      '2-','2','2+',
-      '3-','3','3+',
-      '4-','4','4+',
-      '5-','5','5+',
-      '6-','6','6+',
-      '7-','7','7+',
-      '8-','8','8+',
-      '9-','9','9+',
-      '10-','10'
-      ];
+        '0-','0','0+',
+        '1-','1','1+',
+        '2-','2','2+',
+        '3-','3','3+',
+        '4-','4','4+',
+        '5-','5','5+',
+        '6-','6','6+',
+        '7-','7','7+',
+        '8-','8','8+',
+        '9-','9','9+',
+        '10-','10','10+'
+    ];
     if (array.includes(x)) {
-      v = array.indexOf(x) + 1;
+        v = array.indexOf(x) + 1;
     } else {
-      v = "NOT ALLOWED PER THE RULES OF KEVIN"
+        v = "NOT ALLOWED"
     }
-    document.getElementById("all").innerHTML = v;
-    document.getElementById("panel2").style.display = "block";
+    if (v == "NOT ALLOWED") {
+        document.getElementById("all").innerHTML = (v + "! THIS IS KEVIN'S WORLD AND YOU CAN'T RUIN IT.");
+    } else {
+        document.getElementById("all").innerHTML = (v + " out of a possible 33 points.");
+    }
+    show = document.getElementById("panel2");
+    if (show.style.display === "none") {
+      show.style.display = "block";
+    } else {
+      show.style.display = "none";
+    }
 }
 
 function myFunctionGrade() {
     var x = document.getElementById("point").value;
     var grade = "";
     const array = [
-    '0','0+',
-    '1-','1','1+',
-    '2-','2','2+',
-    '3-','3','3+',
-    '4-','4','4+',
-    '5-','5','5+',
-    '6-','6','6+',
-    '7-','7','7+',
-    '8-','8','8+',
-    '9-','9','9+',
-    '10-','10'
+        '0-','0','0+',
+        '1-','1','1+',
+        '2-','2','2+',
+        '3-','3','3+',
+        '4-','4','4+',
+        '5-','5','5+',
+        '6-','6','6+',
+        '7-','7','7+',
+        '8-','8','8+',
+        '9-','9','9+',
+        '10-','10','10+'
     ];
     const grades = [
-    'F',
-    'D-','D','D+',
-    'C-','C','C+',
-    'B-','B','B+',
-    'A-','A','A+'
+        'F',
+        'D-','D','D+',
+        'C-','C','C+',
+        'B-','B','B+',
+        'A-','A','A+'
     ];
     if (array.includes(x)) {
-    v = array.indexOf(x) + 1;
+        v = array.indexOf(x) + 1;
     } else {
-    v = "not"
+        v = "not"
     }
 
     if (v != "not") {
-        value = ((v / 31).toFixed(2)) * 100;
+        value = ((v / 33).toFixed(2)) * 100;
         if ( value < 59 ) { grade = value + '% (F)'; } else
         if ( value > 59 && value < 63 ) { grade = value + '% (D-)'; } else
         if ( value > 62 && value < 67 ) { grade = value + '% (D)';  } else
@@ -70,9 +79,21 @@ function myFunctionGrade() {
         v = grade;
         }
     document.getElementById("allGrade").innerHTML = v;
-    document.getElementById("panel3").style.display = "block";
+
+    // Shows and/or hides the element when clicked again
+    show = document.getElementById("panel3");
+    if (show.style.display === "none") {
+      show.style.display = "block";
+    } else {
+      show.style.display = "none";
+    }
 }
 
 function explainMe() {
-    document.getElementById("panel").style.display = "block";
+    var x = document.getElementById("kevinsMind");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
 }
