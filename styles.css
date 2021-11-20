@@ -94,6 +94,14 @@ article #kevinsMind {
     padding: .5em;
 }
 
+article #ericsMind {
+    font-size: 18px;
+    background: #FFF7E5;
+    color: #036564;
+    border-bottom: 4px solid #CCC4B2;
+    padding: .5em;
+}
+
 article input {
     width: 47.75%;
     color: #036564;
@@ -119,10 +127,22 @@ article button.one {
 }
 
 article button.two {
-    width: 25%;
+    width: 20%;
     color: #036564;
     padding: .5em;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    background: #FFF7E5;
+    border: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+article button.three {
+    width: 20%;
+    color: #036564;
+    padding: .5em;
+    font-size: 15px;
     font-weight: bold;
     background: #FFF7E5;
     border: 0;

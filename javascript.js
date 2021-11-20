@@ -32,7 +32,7 @@ function myFunction() {
     }
 }
 
-function myFunctionGrade() {
+function myFunctionCody() {
     var x = document.getElementById("point").value;
     var grade = "";
     const array = [
@@ -89,8 +89,37 @@ function myFunctionGrade() {
     }
 }
 
+function myFunctionEric() {
+    var x = document.getElementById("ericPoint").value;
+    var grade = "";
+    const array = [
+        '0-','0','0+',
+        '1-','1','1+',
+        '2-','2','2+',
+        '3-','3','3+',
+        '4-','4','4+',
+        '5-','5','5+',
+        '6-','6','6+',
+        '7-','7','7+',
+        '8-','8','8+',
+        '9-','9','9+',
+        '10-','10','10+'
+    ];
+
+}
+
+
 function explainMe() {
     var x = document.getElementById("kevinsMind");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+}
+
+function explainMeEric() {
+    var x = document.getElementById("ericsMind");
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {
